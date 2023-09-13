@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: foo
-        uses: CrisWalker/AccionCompuesta/blob/main/.github/workflows/Action.yml@v1
+        uses: workflows/AccionCompuesta@v1
         with:
           who-to-greet: 'Juanito'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
